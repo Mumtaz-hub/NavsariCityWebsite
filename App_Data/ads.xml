@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/images/Slide1.jpg</ImageUrl>
+		<Width>900</Width>
+		<NavigateUrl>http://www.NavsariCity.co.in</NavigateUrl>
+		<AlternateText>Navsari City</AlternateText>
+		<Impressions>40</Impressions>
+		<Keyword>small</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/Slide2.jpg</ImageUrl>
+		<Width>900</Width>
+		<NavigateUrl>http://www.NavsariCity.co.in</NavigateUrl>
+		<AlternateText>Navsari City</AlternateText>
+		<Impressions>20</Impressions>
+		<Keyword>small</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/Slide3.jpg</ImageUrl>
+		<Width>900</Width>
+		<NavigateUrl>http://www.NavsariCity.co.in</NavigateUrl>
+		<AlternateText>Navsari City</AlternateText>
+		<Impressions>40</Impressions>
+		<Keyword>small</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/Slide4.jpg</ImageUrl>
+		<Width>900</Width>
+		<NavigateUrl>http://www.NavsariCity.co.in</NavigateUrl>
+		<AlternateText>Navsari City</AlternateText>
+		<Impressions>40</Impressions>
+		<Keyword>small</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/Slide3.jpg</ImageUrl>
+		<Width>900</Width>
+		<NavigateUrl>http://www.NavsariCity.co.in</NavigateUrl>
+		<AlternateText>Navsari City</AlternateText>
+		<Impressions>40</Impressions>
+		<Keyword>small</Keyword>
+	</Ad>
+</Advertisements>

@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage1.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Navsari City</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="en" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+<asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div id="page">
+        <div id="header">
+            <h1><a href="Default.aspx">Navsari City</a></h1>
+            <%--<form runat="server" id="search" method="get" action="#">
+                <input type="text" class="text" />
+                <input type="submit" class="submit" value="Search" />
+            </form>    --%>
+            <div style="float:right;">
+                <a href="Logout.aspx" style="color:#fff;font-size:large;">LOGOUT</a>  
+            </div>
+        </div>
+
+        <div>
+                        <asp:Panel ID="Panel2" runat="server" class='slide' BackColor="White" Height="254px">  
+                            <asp:Image ID="Image2" runat="server" ImageUrl="Images/Slide1.jpg" Height="254px" Width="900px" />
+                        </asp:Panel>  
+                        <asp:Panel ID="Panel3" runat="server" class='slide' BackColor="White" Height="254px">  
+                            <asp:Image ID="Image3" runat="server" ImageUrl="Images/Slide2.jpg" Height="254px"  Width="900px" />
+                        </asp:Panel>  
+                        <asp:Panel ID="Panel4" runat="server" class='slide' BackColor="White" Height="254px">  
+                            <asp:Image ID="Image4" runat="server" ImageUrl="Images/Slide3.jpg" Height="254px"  Width="900px"/>
+                        </asp:Panel>  
+                        <asp:Panel ID="Panel5" runat="server" class='slide' BackColor="White" Height="254px">  
+                            <asp:Image ID="Image5" runat="server" ImageUrl="Images/Slide4.jpg" Height="254px"   Width="900px"/>
+                        </asp:Panel>  
+                        <asp:Panel ID="Panel6" runat="server" class='slide' BackColor="White" Height="254px">  
+                            <asp:Image ID="Image6" runat="server" ImageUrl="Images/Slide5.jpg" Height="254px"  Width="900px"/>
+                        </asp:Panel>  
+        </div>
+
+        <%--<div id="menu">
+            <ul>
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="Aboutus.aspx">About</a></li>
+                <li><a href="Gallery.aspx">Gallery</a></li>
+                <li><a href="Contactus.aspx">Contact</a></li>
+            </ul>
+        </div> --%>
+
+        <div id="main">	
+            <div id="sidebar" runat="server">
+                
+            </div><!-- sidebar -->    	              
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+    <div class="clearing">&nbsp;</div>   
+        </div><!-- main -->
+        <div id="footer">
+            <p>Copyright &copy; 2018, designed by <a href="http://www.NavsariCity.co.in/">Ghandhi Engg. Student</a></p>
+        </div>
+
+        
+    </div><!-- page -->
+    </form>
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $divSlide = $("div.slide");
+            $divSlide.hide().eq(0).show();
+            var panelCnt = $divSlide.length;
+
+            //Set Slide Show Interval  
+            setInterval(panelSlider, 4000);
+
+            function panelSlider() {
+                $divSlide.eq(($divSlide.length++) % panelCnt)
+                .slideUp("slow", function () {
+                    $divSlide.eq(($divSlide.length) % panelCnt)
+                        .slideDown("slow");
+                });
+            }
+        });  
+    </script>  
+</body>
+</html>
